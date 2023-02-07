@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Fantech</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-dark min-vw-100">
+        <h2 class="p-3 text-white">Fantech</h2>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link text-white"
+              data-bs-toggle="modal"
+              data-bs-target="#modal"
+            >
+              <i class="bi bi-cart mx-5" id="carritoContenedor">0</i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="row mt-5" id="contenedor"></div>
+    </main>
+    
+
+    <div class="container-xl">
+      <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Carrito</h5>
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" id="vaciarCarrito">
+                Vaciar carrito
+              </button>
+              <button type="button" id="procesarCompra" class="btn btn-primary">
+                Continuar compra
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+
+              <span>Precio total:</span>
+              <p class="text-center" id="precioTotal"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <footer>
+      <div class="conteiner-fluid p-5 text-white">
+         <div class="row">
+           <div class="col-xs-12 col-md-6 col-lg-3">
+             <p class="h3">FANTECH</p>
+             <p>Horarios de atencion</p>
+             <p> L a V 10hs a 20:00hs</p>          
+             <p>Developed by Federico Segovia</p>             
+           </div>
+           
+           <div class="col-xs-12 col-md-6 col-lg-3">
+             <p class="h5"><img src="https://cdn-icons-png.flaticon.com/512/124/124034.png?w=360" alt="" width="35" height="">543513996587</p>
+             
+           </div>
+           
+           <div class="col-xs-12 col-md-6 col-lg-3">
+             <p class="h5">Contacto</p>
+           <div class="mb-2">
+             <p><img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt=""  width="25" height="25"><a class="text-white text-decoration-none" href="https://www.linkedin.com/feed/">Linkedin</a></p>
+
+           </div>
+           <div class="mb-2">
+             <p><img src="https://i.pinimg.com/originals/21/d6/7f/21d67f1d6b3be5bb2e39395311c77fc6.jpg" alt="" width="25" height="25"><a class="text-white text-decoration-none" href="https://www.instagram.com/segovia.fede/">Instagram</a></p>
+
+           </div>
+           <div class="col-xs-12 pt-4">
+             <p class="text-white text-aline-center">Copyright ©️ 2022- FANTECH</p>
+
+           </div>
+     </footer>
+  </body>
+</html>
